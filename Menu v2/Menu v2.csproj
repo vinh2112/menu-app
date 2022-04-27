@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Menu_v2</RootNamespace>
+    <UseWPF>true</UseWPF>
+	  <UseWindowsForms>true</UseWindowsForms>
+    <AssemblyName>Menu</AssemblyName>
+    <ApplicationIcon>SC_logo.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\access.png" />
+    <None Remove="Images\alarm.png" />
+    <None Remove="Images\controlpanel.png" />
+    <None Remove="Images\disk.png" />
+    <None Remove="Images\excel.png" />
+    <None Remove="Images\facebook.png" />
+    <None Remove="Images\mixigaming.png" />
+    <None Remove="Images\onenote.png" />
+    <None Remove="Images\outlook.png" />
+    <None Remove="Images\photoshop.png" />
+    <None Remove="Images\powerpoint.png" />
+    <None Remove="Images\publisher.png" />
+    <None Remove="Images\rain.png" />
+    <None Remove="Images\recyclebin.png" />
+    <None Remove="Images\spotify.png" />
+    <None Remove="Images\thispc.png" />
+    <None Remove="Images\tool.png" />
+    <None Remove="Images\wifi.png" />
+    <None Remove="Images\word.png" />
+    <None Remove="Images\youtube.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="4.0.0" />
+    <PackageReference Include="Ookii.Dialogs.Wpf" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\access.png" />
+    <Resource Include="Images\alarm.png" />
+    <Resource Include="Images\controlpanel.png" />
+    <Resource Include="Images\disk.png" />
+    <Resource Include="Images\excel.png" />
+    <Resource Include="Images\facebook.png" />
+    <Resource Include="Images\mixigaming.png" />
+    <Resource Include="Images\onenote.png" />
+    <Resource Include="Images\outlook.png" />
+    <Resource Include="Images\photoshop.png" />
+    <Resource Include="Images\powerpoint.png" />
+    <Resource Include="Images\publisher.png" />
+    <Resource Include="Images\rain.png" />
+    <Resource Include="Images\recyclebin.png" />
+    <Resource Include="Images\spotify.png" />
+    <Resource Include="Images\thispc.png" />
+    <Resource Include="Images\tool.png" />
+    <Resource Include="Images\wifi.png" />
+    <Resource Include="Images\word.png" />
+    <Resource Include="Images\youtube.png" />
+  </ItemGroup>
+
+</Project>

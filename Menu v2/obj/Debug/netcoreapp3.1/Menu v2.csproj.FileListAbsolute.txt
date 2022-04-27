@@ -1,0 +1,37 @@
+E:\8. MyProject\Menu v2\Menu v2\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+E:\8. MyProject\Menu v2\Menu v2\obj\Debug\netcoreapp3.1\App.g.cs
+E:\8. MyProject\Menu v2\Menu v2\obj\Debug\netcoreapp3.1\MainWindow.baml
+E:\8. MyProject\Menu v2\Menu v2\obj\Debug\netcoreapp3.1\Menu v2.AssemblyInfoInputs.cache
+E:\8. MyProject\Menu v2\Menu v2\obj\Debug\netcoreapp3.1\Menu v2.AssemblyInfo.cs
+E:\8. MyProject\Menu v2\Menu v2\obj\Debug\netcoreapp3.1\Menu v2.csproj.CoreCompileInputs.cache
+E:\8. MyProject\Menu v2\Menu v2\obj\Debug\netcoreapp3.1\Menu v2.genruntimeconfig.cache
+E:\8. MyProject\Menu v2\Menu v2\bin\Debug\netcoreapp3.1\MaterialDesignColors.dll
+E:\8. MyProject\Menu v2\Menu v2\bin\Debug\netcoreapp3.1\MaterialDesignThemes.Wpf.dll
+E:\8. MyProject\Menu v2\Menu v2\obj\Debug\netcoreapp3.1\Menu v2.csproj.CopyComplete
+E:\8. MyProject\Menu v2\Menu v2\obj\Debug\netcoreapp3.1\App.baml
+E:\8. MyProject\Menu v2\Menu v2\obj\Debug\netcoreapp3.1\UCApplication.g.cs
+E:\8. MyProject\Menu v2\Menu v2\obj\Debug\netcoreapp3.1\UCApplication.baml
+E:\8. MyProject\Menu v2\Menu v2\obj\Debug\netcoreapp3.1\UCOffice.g.cs
+E:\8. MyProject\Menu v2\Menu v2\obj\Debug\netcoreapp3.1\UCOffice.baml
+E:\8. MyProject\Menu v2\Menu v2\obj\Debug\netcoreapp3.1\UCWindowApp.g.cs
+E:\8. MyProject\Menu v2\Menu v2\obj\Debug\netcoreapp3.1\UCWindowApp.baml
+E:\8. MyProject\Menu v2\Menu v2\bin\Debug\netcoreapp3.1\Menu.exe
+E:\8. MyProject\Menu v2\Menu v2\bin\Debug\netcoreapp3.1\Menu.deps.json
+E:\8. MyProject\Menu v2\Menu v2\bin\Debug\netcoreapp3.1\Menu.runtimeconfig.json
+E:\8. MyProject\Menu v2\Menu v2\bin\Debug\netcoreapp3.1\Menu.runtimeconfig.dev.json
+E:\8. MyProject\Menu v2\Menu v2\bin\Debug\netcoreapp3.1\Menu.dll
+E:\8. MyProject\Menu v2\Menu v2\bin\Debug\netcoreapp3.1\Menu.pdb
+E:\8. MyProject\Menu v2\Menu v2\obj\Debug\netcoreapp3.1\UCTool.g.cs
+E:\8. MyProject\Menu v2\Menu v2\obj\Debug\netcoreapp3.1\UCWeb.g.cs
+E:\8. MyProject\Menu v2\Menu v2\obj\Debug\netcoreapp3.1\Menu_MarkupCompile.cache
+E:\8. MyProject\Menu v2\Menu v2\obj\Debug\netcoreapp3.1\Menu_MarkupCompile.lref
+E:\8. MyProject\Menu v2\Menu v2\obj\Debug\netcoreapp3.1\UCTool.baml
+E:\8. MyProject\Menu v2\Menu v2\obj\Debug\netcoreapp3.1\UCWeb.baml
+E:\8. MyProject\Menu v2\Menu v2\obj\Debug\netcoreapp3.1\Menu.g.resources
+E:\8. MyProject\Menu v2\Menu v2\obj\Debug\netcoreapp3.1\Menu.dll
+E:\8. MyProject\Menu v2\Menu v2\obj\Debug\netcoreapp3.1\Menu.pdb
+E:\8. MyProject\Menu v2\Menu v2\bin\Debug\netcoreapp3.1\Ookii.Dialogs.Wpf.dll
+E:\8. MyProject\Menu v2\Menu v2\obj\Debug\netcoreapp3.1\Tool.g.cs
+E:\8. MyProject\Menu v2\Menu v2\obj\Debug\netcoreapp3.1\UCWifi.g.cs
+E:\8. MyProject\Menu v2\Menu v2\obj\Debug\netcoreapp3.1\Tool.baml
+E:\8. MyProject\Menu v2\Menu v2\obj\Debug\netcoreapp3.1\UCWifi.baml

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "n0zSRRpnahbg05S69FUxOGkK90jUtY1Cy/5L+61iFHvZ69fOfamUG/mvAK9rsJ96HSiBQn+i7R6aF7Ox7tUrRg==",
+  "success": true,
+  "projectFilePath": "E:\\8.MyProject\\C#\\Menu v2\\Menu v2\\Menu v2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vuong\\.nuget\\packages\\materialdesigncolors\\2.0.0\\materialdesigncolors.2.0.0.nupkg.sha512",
+    "C:\\Users\\vuong\\.nuget\\packages\\materialdesignthemes\\4.0.0\\materialdesignthemes.4.0.0.nupkg.sha512",
+    "C:\\Users\\vuong\\.nuget\\packages\\ookii.dialogs.wpf\\3.1.0\\ookii.dialogs.wpf.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

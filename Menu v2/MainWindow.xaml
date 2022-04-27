@@ -1,0 +1,299 @@
+﻿<Window x:Class="Menu_v2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:Menu_v2"
+        mc:Ignorable="d"
+        Title="Menu" Width="1100" Height="600" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True" Background="{x:Null}">
+    <Grid>
+        <materialDesign:Card UniformCornerRadius="5" Background="#01000000" MouseDown="Card_MouseDown">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0" Background="#000000">
+                    <StackPanel Height="30" Orientation="Horizontal">
+                        <Button Name="btnExit" Style="{StaticResource MaterialDesignFloatingActionButton}" Background="#FF4443" Width="10" Height="10"
+                                            BorderBrush="{x:Null}" Margin=" 15 0 0 0" Click="btnExit_Click">
+
+                        </Button>
+                        <Button Name="btnMaximize" Style="{StaticResource MaterialDesignFloatingActionButton}" Background="#FFBE00" Width="10" Height="10" 
+                                            BorderBrush="{x:Null}" Margin=" 7 0 0 0" Click="btnMaximize_Click">
+
+                        </Button>
+                        <Button Name="btnMinimize" Style="{StaticResource MaterialDesignFloatingActionButton}" Background="#00D646" Width="10" Height="10" 
+                                            BorderBrush="{x:Null}" Margin=" 7 0 0 0" Click="btnMinimize_Click">
+
+                        </Button>
+                    </StackPanel>
+                </Grid>
+
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition x:Name="ColumnMenuWidth" Width="230"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0" Background="#EE000000">
+                        <StackPanel>
+                            <Grid Height="70">
+                                <StackPanel Orientation="Horizontal">
+                                    <ToggleButton IsChecked="True"
+                                        Style="{StaticResource MaterialDesignToolForegroundButton}" Background="{x:Null}" BorderBrush="{x:Null}"
+                                              VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5 0 0 0" Width="50" Height="50" Checked="ToggleButton_Checked" Unchecked="ToggleButton_Unchecked">
+                                        <materialDesign:PackIcon Kind="Menu" Foreground="#FFFFFF" Width="30" Height="30"/>
+
+                                    </ToggleButton>
+                                    <TextBlock Text="M E N U" FontSize="26" Foreground="#FFFFFF" VerticalAlignment="Center" FontWeight="SemiBold" Margin="30 0 30 0"/>
+                                </StackPanel>
+                            </Grid>
+
+                            <StackPanel Background="#AA282828" Height="2" Width="200"></StackPanel>
+
+                            <ListView x:Name="ListViewMenu"
+                                      Margin="0 20 0 0"
+                                      Background="{x:Null}"
+                                      BorderBrush="{x:Null}"
+                                      ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectionChanged="ListViewMenu_SelectionChanged">
+                                <ListViewItem HorizontalAlignment="Left" Margin="0 5 0 5" IsSelected="True">
+                                    <StackPanel Orientation="Horizontal" Width="230">
+                                        <materialDesign:PackIcon Kind="Heart" Width="30" Height="30" Margin="7 0 0 0"/>
+                                        <TextBlock Text="Your App" FontSize="18" VerticalAlignment="Center" FontWeight="SemiBold" Margin="10 0 0 0"/>
+                                    </StackPanel>
+                                </ListViewItem>
+
+                                <ListViewItem HorizontalAlignment="Left" Margin="0 5 0 5">
+                                    <StackPanel Orientation="Horizontal" Width="230">
+                                        <materialDesign:PackIcon Kind="MicrosoftOffice" Width="30" Height="30" Margin="7 0 0 0"/>
+                                        <TextBlock Text="Microsoft Office" FontSize="18" VerticalAlignment="Center" FontWeight="SemiBold" Margin="10 0 0 0"/>
+                                    </StackPanel>
+                                </ListViewItem>
+
+                                <ListViewItem HorizontalAlignment="Left" Margin="0 5 0 5">
+                                    <StackPanel Orientation="Horizontal" Width="230">
+                                        <materialDesign:PackIcon Kind="MicrosoftWindows" Width="30" Height="30" Margin="7 0 0 0"/>
+                                        <TextBlock Text="Window" FontSize="18" VerticalAlignment="Center" FontWeight="SemiBold" Margin="10 0 0 0"/>
+                                    </StackPanel>
+                                </ListViewItem>
+
+                                <ListViewItem HorizontalAlignment="Left" Margin="0 5 0 5">
+                                    <StackPanel Orientation="Horizontal" Width="230">
+                                        <materialDesign:PackIcon Kind="Tools" Width="30" Height="30" Margin="7 0 0 0"/>
+                                        <TextBlock Text="Tools" FontSize="18" VerticalAlignment="Center" FontWeight="SemiBold" Margin="10 0 0 0"/>
+                                    </StackPanel>
+                                </ListViewItem>
+
+                                <ListViewItem HorizontalAlignment="Left" Margin="0 5 0 5">
+                                    <StackPanel Orientation="Horizontal" Width="230">
+                                        <materialDesign:PackIcon Kind="Web" Width="30" Height="30" Margin="7 0 0 0"/>
+                                        <TextBlock Text="Web" FontSize="18" VerticalAlignment="Center" FontWeight="SemiBold" Margin="10 0 0 0"/>
+                                    </StackPanel>
+                                </ListViewItem>
+
+                            </ListView>
+                        </StackPanel>
+                    </Grid>
+                    <Grid Grid.Column="1" Background="#181818">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="70"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid Grid.Row="0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Grid Grid.Column="0">
+                                    <StackPanel></StackPanel>
+                                </Grid>
+
+                                <Grid Grid.Column="1">
+                                    <StackPanel Width="150" Height="2" Background="#333333" Margin="0 0 30 0"></StackPanel>
+                                </Grid>
+
+                                <Grid Grid.Column="2">
+                                    <TextBlock Name="lbMenuName" Text="Your App" FontSize="26" FontWeight="SemiBold" Foreground="#333333" VerticalAlignment="Center"/>
+                                </Grid>
+
+                                <Grid Grid.Column="3">
+                                    <StackPanel Width="150" Height="2" Background="#333333" Margin="30 0 0 0"></StackPanel>
+                                </Grid>
+
+                                <Grid Grid.Column="4">
+                                    <Border Name="SearchView" MaxWidth="200" CornerRadius="20" Height="40" Background="#282828" Margin="20 0">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="40"/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <Grid Grid.Column="0" Margin="10 0 0 0">
+                                                <TextBox x:Name="tbSearch" TextChanged="tbSearch_TextChanged" KeyUp="tbSearch_KeyUp"
+                                                         Style="{x:Null}" 
+                                                         Background="{x:Null}"
+                                                         BorderThickness="0"
+                                                         Foreground="#FFFFFF" FontSize="16"
+                                                         CaretBrush="#999999"
+                                                         VerticalAlignment="Center"/>
+                                            </Grid>
+
+                                            <Grid Grid.Column="1">
+                                                <materialDesign:PackIcon Kind="Search" Foreground="#FFFFFF" Width="20" Height="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+                                                <Button Name="btnClearSearch" Click="btnClearSearch_Click" Style="{StaticResource MaterialDesignFloatingActionAccentButton}" 
+                                                        Height="30" Width="30"
+                                                        Background="#282828"
+                                                        BorderBrush="{x:Null}" Visibility="Collapsed">
+                                                    <materialDesign:PackIcon Kind="Close" Foreground="#FFFFFF" />
+                                                </Button>
+                                            </Grid>
+                                        </Grid>
+                                    </Border>
+                                </Grid>
+                            </Grid>
+
+                            <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <materialDesign:Card Name="Notification" Opacity="0" UniformCornerRadius="5" Background="#88000000">
+                                    <TextBlock Name="txtNotification" Padding="20 10" Text="Romoved App" FontSize="16" FontWeight="SemiBold" Foreground="#fff" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                </materialDesign:Card>
+                            </WrapPanel>
+                        </Grid>
+
+                        <Grid Grid.Row="1">
+                            <!--<Grid.RowDefinitions>
+                                <RowDefinition Height="49*"/>
+                                <RowDefinition Height="88*"/>
+                            </Grid.RowDefinitions>-->
+                            <ScrollViewer Name="ScrollViewApp">
+                                <WrapPanel Name="PnlApplications">
+
+                                </WrapPanel>
+                            </ScrollViewer>
+
+                            <ScrollViewer Name="ScrollSearch" Visibility="Collapsed">
+                                <WrapPanel Name="PnlSearchApps">
+                                    
+                                </WrapPanel>
+                            </ScrollViewer>
+
+                            <Button Name="btnAddApp" Style="{StaticResource MaterialDesignToolForegroundButton}" Width="50" Height="50"
+                                    Background="{x:Null}" 
+                                    BorderBrush="{x:Null}"
+                                    HorizontalAlignment="Right"
+                                    VerticalAlignment="Bottom"
+                                    Margin="0,0,20,20" Padding="-20" Grid.Row="1" Click="btnAddApp_Click">
+                                <materialDesign:PackIcon Kind="AddCircleOutline" Foreground="#FFFFFF" Width="30" Height="30"
+                                                         VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            </Button>
+
+                            <StackPanel Name="PnlSelectedApp" Grid.RowSpan="2" Visibility="Collapsed">
+
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </materialDesign:Card>
+        
+        <!--// Form Add App //-->
+        <materialDesign:Card Name="FormAddApp" UniformCornerRadius="5" Background="#33000000" MouseLeftButtonDown="FormAddApp_MouseLeftButtonDown" Visibility="Collapsed">
+            <Grid>
+                <materialDesign:Card Name="TabAddApp" UniformCornerRadius="5"  MouseLeftButtonDown="TabAddApp_MouseLeftButtonDown"  Background="#282828" Height="350" Width="550">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="30"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="2"/>
+                                <ColumnDefinition Width="1.2*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Grid Grid.Column="0">
+                                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                    <Image Name="AppIcon" Height="150" Width="150"/>
+                                    <TextBlock Text="Icon App" FontSize="18" FontWeight="SemiBold" Foreground="#55FFFFFF" TextAlignment="Center" Margin="0 10 0 0"/>
+                                </StackPanel>
+                            </Grid>
+                            
+                            <Grid Grid.Column="1">
+                                <StackPanel Background="#55FFFFFF"></StackPanel>
+                            </Grid>
+
+                            <Grid Grid.Column="2">
+                                <StackPanel Margin="20" HorizontalAlignment="Left">
+                                    <TextBlock Text="Application" FontSize="14" FontWeight="SemiBold" Foreground="#55FFFFFF"/>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Border CornerRadius="3" Background="#181818" Width="200" Height="40">
+                                            <TextBox Name="tbAppPath" Style="{x:Null}" TextChanged="tbAppPath_TextChanged"
+                                                     VerticalContentAlignment="Center" FontWeight="SemiBold" Foreground="#FFFFFF" FontSize="16" Padding="0" Margin="10 0 10 0" BorderThickness="0" BorderBrush="{x:Null}" Background="{x:Null}" CaretBrush="#55FFFFFF" SelectionBrush="#55FFFFFF" />
+                                        </Border>
+                                        <Button x:Name="btnChooseApp" Style="{StaticResource MaterialDesignFloatingActionButton}" Width="50" Height="50"
+                                                BorderBrush="{x:Null}" Background="{x:Null}" Foreground="#FFFFFF" HorizontalAlignment="Left" Click="btnChooseApp_Click">
+                                            <materialDesign:PackIcon Kind="Folder" Width="20" Height="20"/>
+                                        </Button>
+                                    </StackPanel>
+                                    
+                                    <TextBlock Text="Name Application" FontSize="14" FontWeight="SemiBold" Foreground="#55FFFFFF"/>
+                                    <Border CornerRadius="3" Background="#181818" Width="200" Height="40" Margin="0 5 0 0" HorizontalAlignment="Left">
+                                        <TextBox Name="NameApp" Style="{x:Null}" VerticalContentAlignment="Center" TextAlignment="Center" FontWeight="SemiBold" Foreground="#FFFFFF" FontSize="16" Padding="0" Margin="10 0 10 0" BorderThickness="0" BorderBrush="{x:Null}" Background="{x:Null}" CaretBrush="#55FFFFFF" SelectionBrush="#55FFFFFF" />
+                                    </Border>
+
+                                    <TextBlock Text="Icon" FontSize="14" FontWeight="SemiBold" Foreground="#55FFFFFF"/>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Border CornerRadius="3" Background="#181818" Width="200" Height="40">
+                                            <TextBox Name="tbIconPath" Style="{x:Null}" TextChanged="tbIconPath_TextChanged" VerticalContentAlignment="Center" FontWeight="SemiBold" Foreground="#FFFFFF" FontSize="16" Padding="0" Margin="10 0 10 0" BorderThickness="0" BorderBrush="{x:Null}" Background="{x:Null}" CaretBrush="#55FFFFFF" SelectionBrush="#55FFFFFF" />
+                                        </Border>
+                                        <Button x:Name="btnChooseIcon" Style="{StaticResource MaterialDesignFloatingActionButton}" Width="50" Height="50"
+                                                BorderBrush="{x:Null}" Background="{x:Null}" Foreground="#FFFFFF" HorizontalAlignment="Left" Click="btnChooseIcon_Click">
+                                            <materialDesign:PackIcon Kind="Folder" Width="20" Height="20"/>
+                                        </Button>
+                                    </StackPanel>
+                                    
+                                    <materialDesign:Card Name="CardCreateApp" UniformCornerRadius="20" Width="100" Height="35" Margin="0 10 0 0">
+                                        <Button Name="btnCreateApp" Style="{StaticResource MaterialDesignFlatDarkBgButton}"
+                                            Content="Create"
+                                            Foreground="#FFFFFF"
+                                            Background="#FF3334"
+                                            BorderBrush="{x:Null}"
+                                            Width="110" Height="40"
+                                            Margin="-5 -3 0 0"
+                                            Click="btnCreateApp_Click">
+                                        </Button>
+                                    </materialDesign:Card>
+
+                                    <materialDesign:Card Name="CardSaveApp" UniformCornerRadius="20" Width="100" Height="35" Margin="0 10 0 0">
+                                        <Button Name="btnSaveApp" Style="{StaticResource MaterialDesignFlatDarkBgButton}"
+                                            Content="Save"
+                                            Foreground="#FFFFFF"
+                                            Background="#FF3334"
+                                            BorderBrush="{x:Null}"
+                                            Width="110" Height="40"
+                                            Margin="-5 -3 0 0"
+                                            Click="btnSaveApp_Click">
+                                        </Button>
+                                    </materialDesign:Card>
+
+                                </StackPanel>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </materialDesign:Card>
+            </Grid>
+        </materialDesign:Card>
+    </Grid>
+</Window>

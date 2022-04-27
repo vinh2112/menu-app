@@ -1,0 +1,9 @@
+E:\8. MyProject\Menu v2\IconExtractor\bin\Debug\netcoreapp3.0\IconExtractor.deps.json
+E:\8. MyProject\Menu v2\IconExtractor\bin\Debug\netcoreapp3.0\IconExtractor.dll
+E:\8. MyProject\Menu v2\IconExtractor\bin\Debug\netcoreapp3.0\IconExtractor.pdb
+E:\8. MyProject\Menu v2\IconExtractor\obj\Debug\netcoreapp3.0\IconExtractor.csprojAssemblyReference.cache
+E:\8. MyProject\Menu v2\IconExtractor\obj\Debug\netcoreapp3.0\IconExtractor.AssemblyInfoInputs.cache
+E:\8. MyProject\Menu v2\IconExtractor\obj\Debug\netcoreapp3.0\IconExtractor.AssemblyInfo.cs
+E:\8. MyProject\Menu v2\IconExtractor\obj\Debug\netcoreapp3.0\IconExtractor.csproj.CoreCompileInputs.cache
+E:\8. MyProject\Menu v2\IconExtractor\obj\Debug\netcoreapp3.0\IconExtractor.dll
+E:\8. MyProject\Menu v2\IconExtractor\obj\Debug\netcoreapp3.0\IconExtractor.pdb
